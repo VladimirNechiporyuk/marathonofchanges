@@ -1,0 +1,19 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: marathon-of-changes
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    properties.hibernate.jdbc.lob.non_contextual_creation: true
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/maraphon_peremen
+    username: postgres
+    password: postgres
+  data:
+    mongodb:
+      database: marathon_peremen
